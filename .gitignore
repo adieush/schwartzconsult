@@ -4,6 +4,8 @@
 /storage/*.key
 /vendor
 .env
+.vagrant
+/vagrant/nginx/log
 .env.backup
 .phpunit.result.cache
 Homestead.json
