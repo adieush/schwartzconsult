@@ -6,9 +6,9 @@
             <div class="col-lg-6">
                 <div class="section-head vcenter">
                     <div>
-                        <h5 class="section-subtitle ">our Services</h5>
+                        <h5 class="section-subtitle ">Consultancy Services</h5>
                         <h2 class="section-title ">
-                            We do big thinks<span class="text-primary">. </span>
+                            A Package To Suit You<span class="text-primary">. </span>
                         </h2>
                     </div>
                 </div>
@@ -20,14 +20,15 @@
                                 <div class="row">
                                     <div class="col-auto">
                                         <div class="box-icon">
-                                            <ion-icon name="notifications-outline"></ion-icon>
+                                            <ion-icon name="logo-html5"></ion-icon>
                                         </div>
                                     </div>
                                     <div class="col">
-                                        <h3 class="box-title">Optimal Choice</h3>
+                                        <h3 class="box-title">Web Development</h3>
                                         <p class="box-desc">
-                                            Keep track of all the important KPIs in your organization
-                                            across
+                                            We design and build amazing websites for our clients,
+                                            from B2B systems through to transactional websites,
+                                            we’ve got it covered.
                                         </p>
                                     </div>
                                 </div>
@@ -39,14 +40,15 @@
                                 <div class="row">
                                     <div class="col-auto">
                                         <div class="box-icon">
-                                            <ion-icon name="finger-print"></ion-icon>
+                                            <ion-icon name="cloud-upload-outline"></ion-icon>
                                         </div>
                                     </div>
                                     <div class="col">
-                                        <h3 class="box-title">Optimal Choice</h3>
+                                        <h3 class="box-title">API Integrations</h3>
                                         <p class="box-desc">
-                                            Keep track of all the important KPIs in your organization
-                                            across
+                                            Struggling to join the dots?
+                                            Our experienced team will guide you through
+                                            any integration process.
                                         </p>
                                     </div>
                                 </div>
@@ -58,14 +60,14 @@
                                 <div class="row">
                                     <div class="col-auto">
                                         <div class="box-icon">
-                                            <ion-icon name="finger-print"></ion-icon>
+                                            <ion-icon name="cog-outline"></ion-icon>
                                         </div>
                                     </div>
                                     <div class="col">
-                                        <h3 class="box-title">Optimal Choice</h3>
+                                        <h3 class="box-title">Process Automation</h3>
                                         <p class="box-desc">
-                                            Keep track of all the important KPIs in your organization
-                                            across
+                                            If out of date processes are slowing down your growth,
+                                            please get in touch. We build automation into the core of your business.
                                         </p>
                                     </div>
                                 </div>
@@ -77,13 +79,13 @@
                                 <div class="row">
                                     <div class="col-auto">
                                         <div class="box-icon">
-                                            <ion-icon name="code-download-outline"></ion-icon>                                    </div>
+                                            <ion-icon name="card-outline"></ion-icon>                                    </div>
                                     </div>
                                     <div class="col">
-                                        <h3 class="box-title">Optimal Choice</h3>
+                                        <h3 class="box-title">Digital Marketing</h3>
                                         <p class="box-desc">
-                                            Keep track of all the important KPIs in your organization
-                                            across
+                                            Lauching a new product, service or business?
+                                            Learn how to cut through the noise and get your message heard.
                                         </p>
                                     </div>
                                 </div>
@@ -95,14 +97,14 @@
                                 <div class="row">
                                     <div class="col-auto">
                                         <div class="box-icon">
-                                            <ion-icon name="finger-print"></ion-icon>
+                                            <ion-icon name="git-compare-outline"></ion-icon>
                                         </div>
                                     </div>
                                     <div class="col">
-                                        <h3 class="box-title">Optimal Choice</h3>
+                                        <h3 class="box-title">System Architecture</h3>
                                         <p class="box-desc">
-                                            Keep track of all the important KPIs in your organization
-                                            across
+                                            Our five star rated team of system architects
+                                            can help plan your digital future, today.
                                         </p>
                                     </div>
                                 </div>
@@ -114,13 +116,13 @@
                                 <div class="row">
                                     <div class="col-auto">
                                         <div class="box-icon">
-                                            <ion-icon name="code-download-outline"></ion-icon>                                    </div>
+                                            <ion-icon name="apps-outline"></ion-icon>                                    </div>
                                     </div>
                                     <div class="col">
-                                        <h3 class="box-title">Optimal Choice</h3>
+                                        <h3 class="box-title">Application Development</h3>
                                         <p class="box-desc">
-                                            Keep track of all the important KPIs in your organization
-                                            across
+                                            Do you need to upgrade your application,
+                                            or maybe you’re planning an entirely new project?
                                         </p>
                                     </div>
                                 </div>

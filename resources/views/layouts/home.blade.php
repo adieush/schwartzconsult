@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>olikit - Home 3</title>
+    <title>Schwartzcode - Consulting</title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
         <div class="container">
             <div class="flex">
                 <a href="../index.html " class=" text-white navbar-brand flex vcenter" href="#"><img
-                            data-aos="fade-right" class="logo" src="images/logos/logo-white.svg" alt="" /></a>
+                            data-aos="fade-right" class="logo" src="images/logos/logosh.svg" alt="" /></a>
 
                 <ul class="navbar-menu">
                     <li data-aos="fade-left" data-aos-delay="100">
@@ -75,7 +75,7 @@
                 <!-- your list menu here -->
                 <div class="navbar-menu">
                     <a href="" data-aos="fade-left" data-aos-delay="400" class="btn btn-dark btn-round">
-                        Get Started
+                        View Packages
                     </a>
                 </div>
                 <div class="mobile-menu">
@@ -109,14 +109,17 @@
             <div class="row">
                 <div class="col-lg-6">
                     <h2 class="header-title text-left" data-aos="fade-up" data-aos-delay="500">
-                        {{ $someName }}  {{ $rofofo ?? 'default'  }} Template
-                        for Business                        </h2>
+                        DIGITAL CONSULTANCY
+                    </h2>
                     <p class="header-desc text-left" data-aos="fade-up" data-aos-delay="600">
-                        Keep track of all the important KPIs in your organization across
-                        departments, employees, projects, and campaigns.
+                        Kickstart your next digital project: book a session with our specialists
+                        today and see how we can help optimise your business.
+
                     </p>
-                    <a href="#" class="btn btn-dark btn-round" data-aos="fade-up" data-aos-delay="700">Let's Get Started
-                        <ion-icon name="arrow-forward"></ion-icon></a>
+                    <a href="#" class="btn btn-dark btn-round" data-aos="fade-up" data-aos-delay="700">
+                        View Packages
+                        <ion-icon name="arrow-forward"></ion-icon>
+                    </a>
                 </div>
                 <div class="col-lg-6">
 
@@ -160,19 +163,19 @@
                     <div class="col-lg-4 col-md-4">
                         <div class="contact-item">
                             <h6>Phone Number</h6>
-                            <p class="contact-item-info">+212 6 46 05 26 56</p>
+                            <p class="contact-item-info">+44 7380 308542</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4">
                         <div class="contact-item">
                             <h6>Email Adress</h6>
-                            <p class="contact-item-info">creabik@gmail.com</p>
+                            <p class="contact-item-info">info@shwartzcode.com</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4">
                         <div class="contact-item">
                             <h6>Local Adress</h6>
-                            <p class="contact-item-info">United State, Casablanca, 72</p>
+                            <p class="contact-item-info">Ukraine, Kiev, Saperno-Slobidska, 22</p>
                         </div>
                     </div>
                 </div>
@@ -185,10 +188,9 @@
                 <div class="col-lg-6">
                     <div class="footer-desc">
                         <div class="logo">
-                            <h1 class="text-white">olikit</h1>
+                            <h1 class="text-white">Schwartzcode</h1>
                         </div>
-                        <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
-                            .</p>
+                        <p>Your Digital Specialists</p>
                     </div>
                 </div>
                 <div class="col-lg-2 col-6">
@@ -196,14 +198,6 @@
                     <ul class="list-items">
                         <li> <a href="#">About</a> </li>
                         <li> <a href="#">Our customers</a> </li>
-                        <li> <a href="#">Contact us</a> </li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-6">
-                    <h6 class="list-title">Useful links</h6>
-                    <ul class="list-items">
-                        <li> <a href="#">Media kit</a> </li>
-                        <li> <a href="#">Affiliate program</a> </li>
                         <li> <a href="#">Contact us</a> </li>
                     </ul>
                 </div>
@@ -217,7 +211,7 @@
                 </div>
             </div>
         </div>
-        <p class="copyright text-center text-copyright"> All rights reserved 2019</p>
+        <p class="copyright text-center text-copyright"> © Schwartzcode 2020</p>
     </div>
 </footer>
 <!-- ====================================== js files  -->
