@@ -3822,7 +3822,10 @@ textarea {
         color: #81838a;
         margin-right: .5rem; }
       .section.section-pricing .plan-item .plan-price {
-        font-size: 3rem; }
+        font-size: 3rem;
+        text-align: center;
+        width: 100%;
+      }
       .section.section-pricing .plan-item .list-items {
         margin-bottom: 1rem;
         padding: 0;

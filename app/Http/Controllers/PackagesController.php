@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 
-class WelcomeController extends Controller
+class PackagesController extends Controller
 {
     /**
      * WelcomeController constructor.
@@ -21,6 +20,6 @@ class WelcomeController extends Controller
      */
     public function index()
     {
-        return view('welcome.index', []);
+        return view('packages.index', []);
     }
 }
