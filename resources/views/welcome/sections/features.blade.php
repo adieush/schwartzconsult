@@ -135,41 +135,34 @@
                 <div class="col-md-12 aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
                     <div class="plan-item has-style1 in-left">
                         <div class="plan-head">
-                            <h4 class="plan-title"> Silver </h4>
+                            <h4 class="plan-title"> One to One </h4>
                             <div class="flex center">
-                                <div class="plan-price">£15.99</div>
+                                <div class="plan-price">£299</div>
+                                <p class="font-weight-bold">For basic projects</p>
                             </div>
 
                         </div>
                         <div class="plan-body">
                             <ul class="list-items">
                                 <li class="item">
-                                    <img src="images/icons/check.svg" alt=""> Private Limited Company
+                                    <img src="images/icons/check.svg" alt=""> One To One Consultancy
                                 </li>
                                 <li class="item">
-                                    <img src="images/icons/check.svg" alt=""> Digital Company Documents
+                                    <img src="images/icons/check.svg" alt=""> Expert Advice
                                 </li>
                                 <li class="item">
-                                    <img src="images/icons/check.svg" alt=""> Free Domain Name
+                                    <img src="images/icons/check.svg" alt=""> Bespoke Content
                                 </li>
                                 <li class="item ">
-                                    <img src="images/icons/check.svg" alt=""> Digital Company Registers
+                                    <img src="images/icons/check.svg" alt=""> Training Sessions
                                 </li>
                                 <li class="item ">
-                                    <img src="images/icons/check.svg" alt=""> Minutes of First Board Meeting
+                                    <img src="images/icons/check.svg" alt=""> Detailed Information
                                 </li>
                                 <li class="item">
-                                    <img src="images/icons/check.svg" alt=""> Legal Contracts & Notices Package
+                                    <img src="images/icons/check.svg" alt=""> Tailored to your needs
                                 </li>
-                                <li class="item is-none">
-                                    <img src="images/icons/check.svg" alt=""> Printed Company Documents
-                                </li>
-                                <li class="item is-none">
-                                    <img src="images/icons/check.svg" alt=""> VAT Registration
-                                </li>
-
-
-
+                                <br />
                             </ul>
                             <div class="flex center mt-1">
                                 <a href="" class="btn btn-dark btn-block"> Get Started </a>

@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <img class="about-img" src="images/bg/about-bg.png" alt="" />
+                <img class="about-img" style="width: 100%" src="images/coding.jpg" alt="" />
             </div>
         </div>
     </div>

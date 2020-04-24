@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 order-0  order-lg-1  mb-sm-20">
-                    <img class="screen" src="images/bg/illustration2.png" alt="">
+                    <img class="screen" src="images/computer.png" alt="">
                 </div>
 
 
