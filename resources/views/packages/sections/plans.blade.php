@@ -1,3 +1,15 @@
+@section('page-title-block')
+    <div class="container">
+        <div class="header-wrap">
+            <h2 class="header-title" data-aos="fade-up" data-aos-delay="500">Pricing: Packages</h2>
+            <div class="space-4">
+
+            </div>
+        </div>
+    </div>
+@endsection;
+
+@section('content')
 <!-- =========================== section Plans-->
 <section class="section section-pricing pricing-in-page">
     <img class="section-particle  top-0" src="../images/others/particle.svg" alt="">
@@ -131,3 +143,4 @@
         </div>
     </div>
 </section>
+@endsection

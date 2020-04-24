@@ -22,88 +22,7 @@
 <!-- =========================== header-->
 <header class="header has-style-bg overlay" style="background-image: url(images/bg/header-bg3.png);">
     <!-- =========================== navbar-->
-    <nav class="navbar">
-        <div class="container">
-            <div class="flex">
-                <a href="../index.html " class=" text-white navbar-brand flex vcenter" href="#"><img
-                            data-aos="fade-right" class="logo" src="images/logos/logosh.svg" alt="" /></a>
-
-                <ul class="navbar-menu">
-                    <li data-aos="fade-left" data-aos-delay="100">
-                        <a class="fade-page" href="../index.html">Home</a>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a>Demos</a>
-                        <ul class="sub-menu">
-                            <li><a class="fade-page" href="Home_1.html">Home 1</a>
-                            </li>
-                            <li><a class="fade-page" href="Home_2.html">Home 2</a>
-                            </li>
-                            <li><a class="fade-page" href="Home_3.html">Home 3</a>
-                            </li>
-                            <li><a class="fade-page" href="Home_4.html">Home 4</a>
-                            </li>
-
-
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a>Pages</a>
-                        <ul class="sub-menu">
-                            <li><a class="fade-page" href="page_about.html">About</a>
-                            </li>
-                            <li><a class="fade-page" href="page_plans.html">Plans</a>
-                            </li>
-                            <li><a class="fade-page" href="page_blog.html">Blog</a>
-                            </li>
-
-                            <li><a class="fade-page" href="page_Article.html"> Article</a>
-                            </li>
-
-                            <li><a class="fade-page" href="page_contact.html"> Contact</a>
-                            </li>
-
-                            <li><a class="fade-page" href="page_help.html"> Help Center </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li data-aos="fade-left" data-aos-delay="400"> <a class="fade-page"
-                                                                      href="#">support</a> </li>
-                </ul>
-            </div>
-            <div class="level-right">
-                <!-- your list menu here -->
-                <div class="navbar-menu">
-                    <a href="{{ url('/packages') }}" data-aos="fade-left" data-aos-delay="400" class="btn btn-dark btn-round">
-                        View Packages
-                    </a>
-                </div>
-                <div class="mobile-menu">
-                    <!-- your list menu in mobile here -->
-                    <ul>
-                        <li><a class="fade-page" href="Home_1.html">Home 1</a></li>
-                        <li><a class="fade-page" href="Home_2.html">Home 2</a></li>
-                        <li><a class="fade-page" href="Home_3.html">Home 3</a></li>
-                        <li><a class="fade-page" href="Home_4.html">Home 4</a></li>
-                        <li><a class="fade-page" href="Home_5.html">Home 5</a></li>
-
-                    </ul>
-                </div>
-                <div class="flex">
-                    <div class="menu-toggle-icon">
-                        <div class="menu-toggle">
-                            <div class="menu">
-                                <input type="checkbox" />
-                                <div class="line-menu"></div>
-                                <div class="line-menu"></div>
-                                <div class="line-menu"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
+    @include('layouts.partials.navbar')
     <div class="container">
         <div class="mt-8 mb-8" >
             <div class="row">
@@ -153,66 +72,7 @@
 
 <!-- ==========================  Footer-->
 <footer class="footer has-style2">
-    <div class="footer-head">
-        <button class="to-top">
-            <ion-icon name="arrow-up"></ion-icon>
-        </button>
-        <div class="container">
-            <div class="section is-sm container pb-0">
-                <div class="row footer-contact">
-                    <div class="col-lg-4 col-md-4">
-                        <div class="contact-item">
-                            <h6>Phone Number</h6>
-                            <p class="contact-item-info">+44 7380 308542</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                        <div class="contact-item">
-                            <h6>Email Adress</h6>
-                            <p class="contact-item-info">info@shwartzcode.com</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                        <div class="contact-item">
-                            <h6>Local Adress</h6>
-                            <p class="contact-item-info">Ukraine, Kiev, Saperno-Slobidska, 22</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer-body">
-        <div class="container">
-            <div class="row ">
-                <div class="col-lg-6">
-                    <div class="footer-desc">
-                        <div class="logo">
-                            <h1 class="text-white">Schwartzcode</h1>
-                        </div>
-                        <p>Your Digital Specialists</p>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-6">
-                    <h6 class="list-title">Company</h6>
-                    <ul class="list-items">
-                        <li> <a href="#">About</a> </li>
-                        <li> <a href="#">Our customers</a> </li>
-                        <li> <a href="#">Contact us</a> </li>
-                    </ul>
-                </div>
-                <div class="col-lg-2">
-                    <h6 class="list-title">Legal</h6>
-                    <ul class="list-items">
-                        <li> <a href="#">Terms</a> </li>
-                        <li> <a href="#">Privacy </a> </li>
-                        <li> <a href="#">Cookies</a> </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <p class="copyright text-center text-copyright"> © Schwartzcode 2020</p>
-    </div>
+    @include('layouts.partials.footer')
 </footer>
 <!-- ====================================== js files  -->
 <script src="js/plugins/jQuery.min.js"></script>
