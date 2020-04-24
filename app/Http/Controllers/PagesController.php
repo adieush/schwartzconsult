@@ -32,4 +32,24 @@ class PagesController extends Controller
     {
         return view('pages.contact', []);
     }
+
+    /**
+     * Terms & Conditions
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function termsAndConditions()
+    {
+        return view('pages.terms', []);
+    }
+
+    /**
+     * Service & Refund Policies
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function serviceRefund()
+    {
+        return view('pages.service-refund', []);
+    }
 }

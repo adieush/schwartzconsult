@@ -49,9 +49,9 @@
             <div class="col-lg-2">
                 <h6 class="list-title">Legal</h6>
                 <ul class="list-items">
-                    <li> <a href="#">Terms</a> </li>
-                    <li> <a href="#">Privacy </a> </li>
-                    <li> <a href="#">Cookies</a> </li>
+                    <li> <a href="{{ url('/terms-and-conditions') }}">Terms</a> </li>
+                    <li> <a href="{{url('/service-and-refund')}}">Service & Refund </a> </li>
+                    {{--<li> <a href="#">Cookies</a> </li>--}}
                 </ul>
             </div>
         </div>
