@@ -15,13 +15,22 @@
 
                 <div class="col-lg-6 order-1  order-lg-0 ">
                     <div class="section-head mb-0">
-                        <h2 class="section-title ">Unleash The Power of
-                            olikit </h2>
-                        <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eius mod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad min im
-                            veniam, quis nostrud exercitati ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat.</p>
-                        <a href="#" class="btn btn-primary btn-round">See our stadies</a>
+                        <h2 class="section-title ">Your Digital Specialists</h2>
+                        <p class="section-desc">
+                            Hello, we’re Schwartzcode. A team of digital specialists with
+                            a passion for our clients’ success.
+                        </p>
+                        <p class="section-desc">
+                            We build web-based solutions to help our clients automate
+                            their business processes, custom content management systems,
+                            responsive websites and more.
+                        </p>
+                        <p class="section-desc">
+                            We offer consultancy services across the digital spectrum,
+                            for a range of private and corporate clients. Book a package
+                            today and let us help make your next digital project a success.
+                        </p>
+                        <a href="{{url('/packages')}}" class="btn btn-primary btn-round">See our packages</a>
                     </div>
                 </div>
                 <div class="col-lg-6 order-0  order-lg-1  mb-sm-20">
@@ -48,10 +57,9 @@
                                         <ion-icon name="code-download-outline"></ion-icon>                                    </div>
                                 </div>
                                 <div class="col">
-                                    <h3 class="box-title">Optimal Choice</h3>
+                                    <h3 class="box-title">Website Development and Design</h3>
                                     <p class="box-desc">
-                                        Keep track of all the important KPIs in your organization
-                                        across
+                                        We design intuitive websites and take care of complex integrations.
                                     </p>
                                 </div>
                             </div>
@@ -66,10 +74,9 @@
                                         <ion-icon name="bookmarks-outline"></ion-icon>                                    </div>
                                 </div>
                                 <div class="col">
-                                    <h3 class="box-title">Optimal Choice</h3>
+                                    <h3 class="box-title">Communication<br /> Systems</h3>
                                     <p class="box-desc">
-                                        Keep track of all the important KPIs in your organization
-                                        across
+                                        We build intercom and communication systems for SME’s
                                     </p>
                                 </div>
                             </div>
@@ -85,10 +92,9 @@
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <h3 class="box-title">Optimal Choice</h3>
+                                    <h3 class="box-title">Process Mapping and Automation</h3>
                                     <p class="box-desc">
-                                        Keep track of all the important KPIs in your organization
-                                        across
+                                        We specialise in automating your processes to optimise your business
                                     </p>
                                 </div>
                             </div>
@@ -100,104 +106,9 @@
     </section>
     <section class="section is-lg">
         <div class="container">
-            <div class="row flex vcenter">
-
-                <div class="col-lg-6 order-1  order-lg-0 ">
-                    <div class="section-head mb-0">
-                        <h2 class="section-title ">Unleash The Power of
-                            olikit </h2>
-                        <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eius mod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad min im
-                            veniam, quis nostrud exercitati ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat.</p>
-                        <a href="#" class="btn btn-primary btn-round">See our stadies</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 order-0  order-lg-1  mb-sm-20">
-                    <img class="screen" src="images/bg/illustration2.png" alt="">
-                </div>
-
-
-            </div>
-
-
+            <div class="row flex vcenter"></div>
         </div>
     </section>
     <!-- =========================== section team-->
-    <section class="section is-lg section-team">
-        <div class="container">
-            <div class="section-head">
-                <h5 class="section-subtitle is-center"> Meet our team</h5>
-                <h2 class="section-title is-center ">We are a smart team of
-                    leading digital</h2>
-            </div>
-            <div class="row min-30">
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-box flex center">
-                        <div class="team-thumb">
-                            <img src="images/bg/member1.png" alt="">
-                            <ul class="team-social flex center vcenter">
-                                <li> <a href="#"> <i class="fab fa-twitter"></i></a> </li>
-                                <li> <a href="#"> <i class="fab fa-facebook-f"></i></a> </li>
-                                <li> <a href="#"> <i class="fab fa-quora"></i></a> </li>
-                                <li> <a href="#"> <i class="fab fa-reddit"></i></a> </li>
-                            </ul>
-                        </div>
-                        <h4 class="team-name">amira yerden</h4>
-                        <p class="team-position">developper</p>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-box flex center">
-                        <div class="team-thumb">
-                            <img src="images/bg/member2.png" alt="">
-                            <ul class="team-social flex center vcenter">
-                                <li> <a href="#"> <i class="fab fa-twitter"></i></a> </li>
-                                <li> <a href="#"> <i class="fab fa-facebook-f"></i></a> </li>
-                                <li> <a href="#"> <i class="fab fa-quora"></i></a> </li>
-                                <li> <a href="#"> <i class="fab fa-reddit"></i></a> </li>
-                            </ul>
-                        </div>
-                        <h4 class="team-name">Mark linomi</h4>
-                        <p class="team-position">developper</p>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-box flex center">
-                        <div class="team-thumb">
-                            <img src="images/bg/member3.png" alt="">
-                            <ul class="team-social flex center vcenter">
-                                <li> <a href="#"> <i class="fab fa-twitter"></i></a> </li>
-                                <li> <a href="#"> <i class="fab fa-facebook-f"></i></a> </li>
-                                <li> <a href="#"> <i class="fab fa-quora"></i></a> </li>
-                                <li> <a href="#"> <i class="fab fa-reddit"></i></a> </li>
-                            </ul>
-                        </div>
-                        <h4 class="team-name">ayoub fennouni</h4>
-                        <p class="team-position">developper</p>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-box flex center">
-                        <div class="team-thumb">
-
-                            <img src="images/bg/member4.png" alt="">
-                            <ul class="team-social flex center vcenter">
-                                <li> <a href="#"> <i class="fab fa-twitter"></i></a> </li>
-                                <li> <a href="#"> <i class="fab fa-facebook-f"></i></a> </li>
-                                <li> <a href="#"> <i class="fab fa-quora"></i></a> </li>
-                                <li> <a href="#"> <i class="fab fa-reddit"></i></a> </li>
-                            </ul>
-                        </div>
-                        <h4 class="team-name">Marina mojo</h4>
-                        <p class="team-position">developper</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
+{{--    @include('pages.sections.team')--}}
 @endsection

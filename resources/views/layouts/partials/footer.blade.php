@@ -43,7 +43,7 @@
                 <ul class="list-items">
                     <li> <a href="{{ url('/about') }}">About</a> </li>
                     <li> <a href="#">Our customers</a> </li>
-                    <li> <a href="#">Contact us</a> </li>
+                    <li> <a href="{{ url('/contact') }}">Contact us</a> </li>
                 </ul>
             </div>
             <div class="col-lg-2">

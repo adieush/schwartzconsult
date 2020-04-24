@@ -14,12 +14,22 @@ class PagesController extends Controller
     }
 
     /**
-     * Show the application dashboard.
+     * Company description
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function about()
     {
         return view('pages.about', []);
+    }
+
+    /**
+     * Contact page
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function contact()
+    {
+        return view('pages.contact', []);
     }
 }

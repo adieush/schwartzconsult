@@ -36,7 +36,7 @@
                         <li><a class="fade-page" href="page_Article.html"> Article</a>
                         </li>
 
-                        <li><a class="fade-page" href="page_contact.html"> Contact</a>
+                        <li><a class="fade-page" href="{{ url('/contact') }}"> Contact</a>
                         </li>
 
                         <li><a class="fade-page" href="page_help.html"> Help Center </a>
