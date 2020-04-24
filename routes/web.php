@@ -20,6 +20,7 @@ Route::get('/', 'WelcomeController@index');
 Route::get('/packages', 'PackagesController@index');
 Route::get('/about', 'PagesController@about');
 Route::get('/contact', 'PagesController@contact');
+Route::get('/company-details', 'PagesController@companyDetails');
 Route::get('/terms-and-conditions', 'PagesController@termsAndConditions');
 Route::get('/service-and-refund', 'PagesController@serviceRefund');
 Route::get('/home', 'HomeController@index')->name('home');

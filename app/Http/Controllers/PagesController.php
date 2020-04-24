@@ -52,4 +52,14 @@ class PagesController extends Controller
     {
         return view('pages.service-refund', []);
     }
+
+    /**
+     * Service & Refund Policies
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function companyDetails()
+    {
+        return view('pages.company-details', []);
+    }
 }

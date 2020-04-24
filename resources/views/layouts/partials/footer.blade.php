@@ -36,6 +36,7 @@
                         <h1 class="text-white">Schwartzcode</h1>
                     </div>
                     <p>Your Digital Specialists</p>
+                    <p><img src="images/icons/master_f_darkbg.png" style="width: 60%; padding-top: 1em;"></p>
                 </div>
             </div>
             <div class="col-lg-2 col-6">
@@ -44,6 +45,7 @@
                     <li> <a href="{{ url('/about') }}">About</a> </li>
                     <li> <a href="#">Our customers</a> </li>
                     <li> <a href="{{ url('/contact') }}">Contact us</a> </li>
+{{--                    <li> <a href="{{ url('/company-details') }}">Company's details</a> </li>--}}
                 </ul>
             </div>
             <div class="col-lg-2">
