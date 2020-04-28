@@ -24,7 +24,7 @@ Route::get('/company-details', 'PagesController@companyDetails');
 Route::get('/terms-and-conditions', 'PagesController@termsAndConditions');
 Route::get('/service-and-refund', 'PagesController@serviceRefund');
 Route::get('/checkout/one-to-one', 'CheckoutController@oneToOne');
-Route::get('/checkout/response-to-server', 'CheckoutController@responseToServer');
+Route::post('/checkout/response-to-server', 'CheckoutController@responseToServer');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 

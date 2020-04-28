@@ -54,7 +54,6 @@ class CheckoutController extends Controller
         echo url("/checkout/response-to-server");
         echo '<pre>';
         var_dump($_POST);
-        var_dump($_GET);
         exit;
     }
 }
