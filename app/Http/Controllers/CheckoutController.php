@@ -24,8 +24,8 @@ class CheckoutController extends Controller
      */
     public function oneToOne()
     {
-        Configuration::setMerchantId(1396424);
-        Configuration::setSecretKey('test');
+        Configuration::setMerchantId(config('fondy.merchant_id'));
+        Configuration::setSecretKey(config('fondy.secret_key'));
         Configuration::setRequestType('form');
         $checkoutData = [
             'order_desc' => 'One to One',
