@@ -66,7 +66,9 @@ class CheckoutController extends Controller
 
         Order::create($request->all());
         
-
+echo '<pre>';
+var_dump($request->post('response_status'));
+exit;
 if($request->post('response_status') == 'success'){
 
     return redirect('/checkout/success');
