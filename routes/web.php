@@ -28,6 +28,21 @@ Route::post('/checkout/response-to-server', 'CheckoutController@responseToServer
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
-//Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['auth', 'permission:use-admin-panel', 'crsf']], function() {
-//    Route::get('/', ['as' => 'admin.dashboard', 'uses' => 'DashboardController@index']);
-//});
+Route::group(
+    [
+        'prefix' => 'admin', 'namespace' => 'Admin',
+        'middleware' => [
+            'auth',
+//            'permission:use-admin-panel',
+//            'crsf'
+        ]
+    ],
+    function() {
+        Route::get('/', ['as' => 'admin.dashboard', 'uses' => 'AdminController@index']);
+        Route::get('/orders', ['as' => 'admin.orders', 'uses' => 'OrdersController@index']);
+        Route::get('/orders/create', ['as' => 'admin.orders.create', 'uses' => 'OrdersController@create']);
+        Route::post('/orders/store', ['as' => 'admin.orders.store', 'uses' => 'OrdersController@store']);
+        Route::get('/orders/destroy', ['as' => 'admin.orders.destroy', 'uses' => 'OrdersController@destroy']);
+        Route::get('/orders/show', ['as' => 'admin.orders.show', 'uses' => 'OrdersController@show']);
+        Route::get('/orders/edit', ['as' => 'admin.orders.edit', 'uses' => 'OrdersController@edit']);
+});
