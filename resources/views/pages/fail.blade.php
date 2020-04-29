@@ -10,4 +10,9 @@
 
 @section('content')
 <p>Your payment failed</p>
+<section class="section is-lg">
+    <div class="container">
+        <div class="row flex vcenter"></div>
+    </div>
+</section>
 @endsection
