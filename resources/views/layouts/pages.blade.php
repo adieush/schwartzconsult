@@ -36,19 +36,19 @@
     @include('layouts.partials.footer')
 </footer>
 <!-- ====================================== js files  -->
-<script src="js/plugins/jQuery.min.js"></script>
-<script src="js/plugins/modernizr.min.js"></script>
-<script src="js/plugins/bootstrap.min.js"></script>
-<script src="js/plugins/feather-icons.js"></script>
-<script src="js/plugins/slick.min.js"></script>
-<script src="js/plugins/owl.carousel.min.js"></script>
-<script src="js/plugins/aos.js"></script>
-<script src="js/plugins/typed.js"></script>
-<script src="js/plugins/all.min.js"></script>
-<script src="js/plugins/jquery.waypoints.min.js"></script>
-<script src="js/plugins/jquery.counterup.min.js"></script>
+<script src="/js/plugins/jQuery.min.js"></script>
+<script src="/js/plugins/modernizr.min.js"></script>
+<script src="/js/plugins/bootstrap.min.js"></script>
+<script src="/js/plugins/feather-icons.js"></script>
+<script src="/js/plugins/slick.min.js"></script>
+<script src="/js/plugins/owl.carousel.min.js"></script>
+<script src="/js/plugins/aos.js"></script>
+<script src="/js/plugins/typed.js"></script>
+<script src="/js/plugins/all.min.js"></script>
+<script src="/js/plugins/jquery.waypoints.min.js"></script>
+<script src="/js/plugins/jquery.counterup.min.js"></script>
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-<script src="js/main.js"></script>
+<script src="/js/main.js"></script>
 </body>
 
 </html>
