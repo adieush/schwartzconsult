@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Order;
 use Cloudipsp\Configuration;
 use Illuminate\Http\Request;
 
@@ -48,10 +49,26 @@ class CheckoutController extends Controller
         return;
     }
 
-    public function responseToServer()
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function responseToServer(Request $request)
     {
+        $request->validate([
+            'order_id' => 'required',
+            'response_status' => 'required',
+            'amount' => 'required',
+            'currency' => 'required',
+        ]);
 
-        echo url("/checkout/response-to-server");
+        Order::create($request->all());
+        
+
+
+        echo $request->post('response_status');
         echo '<pre>';
         var_dump($_POST);
         exit;
