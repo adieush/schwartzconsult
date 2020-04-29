@@ -9,7 +9,13 @@
 @endsection
 
 @section('content')
-    <p>Your payment was successful</p>
+    <section class="section is-lg">
+        <div class="container">
+            <div class="row flex vcenter">
+                <p>Your payment was successful</p>
+            </div>
+        </div>
+    </section>
     <section class="section is-lg">
         <div class="container">
             <div class="row flex vcenter"></div>
