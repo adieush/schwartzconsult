@@ -50,6 +50,37 @@ class CheckoutController extends Controller
     }
 
     /**
+     * Show the application dashboard.
+     *
+     * @return void
+     */
+    public function agencyPackage()
+    {
+        Configuration::setMerchantId(config('fondy.merchant_id'));
+        Configuration::setSecretKey(config('fondy.secret_key'));
+        Configuration::setRequestType('form');
+        $checkoutData = [
+            'order_desc' => 'Agency Package',
+            'currency' => 'GBP',
+            'amount' => 129900,
+            'response_url' => url("/checkout/response-to-server"),
+//            'server_callback_url' => 'http://site.com/callbackurl',
+//            'sender_email' => 'test@fondy.eu',
+            'lang' => 'en',
+            'product_id' => 1,
+            'lifetime' => 36000,
+            'merchant_data' => array(
+                'custom_data1' => 'Some string',
+                'custom_data2' => '00000000000',
+                'custom_data3' => '3!@#$%^&(()_+?"}'
+            )
+        ];
+        \Cloudipsp\Checkout::url($checkoutData)->toCheckout();
+
+        return;
+    }
+
+    /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request

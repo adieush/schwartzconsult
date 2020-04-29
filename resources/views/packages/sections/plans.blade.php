@@ -91,7 +91,7 @@
 
                         </ul>
                         <div class="flex center mt-1">
-                            <a href="" class="btn btn-primary btn-block"> Get Started </a>
+                            <a href="{{url('/checkout/agency-package')}}" class="btn btn-primary btn-block"> Get Started </a>
                         </div>
 
                     </div>
