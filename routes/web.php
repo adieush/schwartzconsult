@@ -23,6 +23,8 @@ Route::get('/contact', 'PagesController@contact');
 Route::get('/company-details', 'PagesController@companyDetails');
 Route::get('/terms-and-conditions', 'PagesController@termsAndConditions');
 Route::get('/service-and-refund', 'PagesController@serviceRefund');
+Route::get('/checkout/success', 'CheckoutController@success');
+Route::get('/checkout/fail', 'CheckoutController@fail');
 Route::get('/checkout/one-to-one', 'CheckoutController@oneToOne');
 Route::post('/checkout/response-to-server', 'CheckoutController@responseToServer');
 Route::get('/home', 'HomeController@index')->name('home');

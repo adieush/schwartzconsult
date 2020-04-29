@@ -31,7 +31,7 @@ class CheckoutController extends Controller
         $checkoutData = [
             'order_desc' => 'One to One',
             'currency' => 'GBP',
-            'amount' => 1000,
+            'amount' => 29900,
             'response_url' => url("/checkout/response-to-server"),
 //            'server_callback_url' => 'http://site.com/callbackurl',
 //            'sender_email' => 'test@fondy.eu',
@@ -67,10 +67,22 @@ class CheckoutController extends Controller
         Order::create($request->all());
         
 
+if($request->post('response_status') == 'success'){
 
-        echo $request->post('response_status');
-        echo '<pre>';
-        var_dump($_POST);
-        exit;
+    return redirect('/checkout/success');
+}
+else {
+
+    return redirect('/checkout/fail');
+}
+
+    }
+
+    public function success(){
+        return view('pages.success');
+    }
+
+    public function fail(){
+        return view('pages.fail');
     }
 }
