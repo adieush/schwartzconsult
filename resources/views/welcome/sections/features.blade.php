@@ -165,7 +165,7 @@
                                 <br />
                             </ul>
                             <div class="flex center mt-1">
-                                <a href="" class="btn btn-dark btn-block"> Get Started </a>
+                                <a href="{{url('/checkout/one-to-one')}}" class="btn btn-dark btn-block"> Get Started </a>
                             </div>
 
                         </div>

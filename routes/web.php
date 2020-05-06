@@ -45,7 +45,14 @@ Route::group(
         Route::get('/orders', ['as' => 'admin.orders', 'uses' => 'OrdersController@index']);
         Route::get('/orders/create', ['as' => 'admin.orders.create', 'uses' => 'OrdersController@create']);
         Route::post('/orders/store', ['as' => 'admin.orders.store', 'uses' => 'OrdersController@store']);
-        Route::get('/orders/destroy', ['as' => 'admin.orders.destroy', 'uses' => 'OrdersController@destroy']);
+        Route::delete('/orders/destroy', ['as' => 'admin.orders.destroy', 'uses' => 'OrdersController@destroy']);
         Route::get('/orders/show', ['as' => 'admin.orders.show', 'uses' => 'OrdersController@show']);
         Route::get('/orders/edit', ['as' => 'admin.orders.edit', 'uses' => 'OrdersController@edit']);
+
+        Route::get('/invoices', ['as' => 'admin.invoices', 'uses' => 'InvoicesController@index']);
+        Route::get('/invoices/create', ['as' => 'admin.invoices.create', 'uses' => 'InvoicesController@create']);
+        Route::post('/invoices/store', ['as' => 'admin.invoices.store', 'uses' => 'InvoicesController@store']);
+        Route::delete('/invoices/destroy{id}', ['as' => 'admin.invoices.destroy', 'uses' => 'InvoicesController@destroy']);
+        Route::get('/invoices/show', ['as' => 'admin.invoices.show', 'uses' => 'InvoicesController@show']);
+        Route::get('/invoices/edit', ['as' => 'admin.invoices.edit', 'uses' => 'InvoicesController@edit']);
 });

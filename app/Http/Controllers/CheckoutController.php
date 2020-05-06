@@ -98,14 +98,14 @@ class CheckoutController extends Controller
         Order::create($request->all());
         
 
-if($request->post('response_status') == 'success'){
+        if($request->post('response_status') == 'success'){
 
-    return redirect('/checkout/success');
-}
-else {
+            return redirect('/checkout/success');
+        }
+        else {
 
-    return redirect('/checkout/fail');
-}
+            return redirect('/checkout/fail');
+        }
 
     }
 
