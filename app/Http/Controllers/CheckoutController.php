@@ -30,7 +30,7 @@ class CheckoutController extends Controller
         Configuration::setRequestType('form');
         $checkoutData = [
             'order_desc' => 'One to One',
-            'currency' => 'GBP',
+            'currency' => 'USD',
             'amount' => 29900,
             'response_url' => url("/checkout/response-to-server"),
 //            'server_callback_url' => 'http://site.com/callbackurl',
@@ -61,7 +61,7 @@ class CheckoutController extends Controller
         Configuration::setRequestType('form');
         $checkoutData = [
             'order_desc' => 'Agency Package',
-            'currency' => 'GBP',
+            'currency' => 'USD',
             'amount' => 129900,
             'response_url' => url("/checkout/response-to-server"),
 //            'server_callback_url' => 'http://site.com/callbackurl',

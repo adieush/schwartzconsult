@@ -137,7 +137,7 @@
                         <div class="plan-head">
                             <h4 class="plan-title"> One to One </h4>
                             <div class="flex center">
-                                <div class="plan-price">£299</div>
+                                <div class="plan-price">$299</div>
                                 <p class="font-weight-bold">For basic projects</p>
                             </div>
 

@@ -21,7 +21,7 @@
                     <div class="plan-head">
                         <h4 class="plan-title"> One to One </h4>
                         <div class="flex center">
-                            <div class="plan-price">£299</div>
+                            <div class="plan-price">$299</div>
                             <p class="font-weight-bold">For basic projects</p>
                         </div>
 
@@ -64,7 +64,7 @@
                     <div class="plan-head">
                         <h4 class="plan-title"> Agency Package </h4>
                         <div class="flex center">
-                            <div class="plan-price is-primary">£1,299</div>
+                            <div class="plan-price is-primary">$1,299</div>
                             <p class="font-weight-bold">For complex projects</p>
                         </div>
 
@@ -104,7 +104,7 @@
                     {{--<div class="plan-head">--}}
                         {{--<h4 class="plan-title"> Bespoke Packages </h4>--}}
                         {{--<div class="flex center">--}}
-                            {{--<div class="plan-price">£POA</div>--}}
+                            {{--<div class="plan-price">$POA</div>--}}
                             {{--<p class="font-weight-bold">For enterprise clients</p>--}}
 
                         {{--</div>--}}
