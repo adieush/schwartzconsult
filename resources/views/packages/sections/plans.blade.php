@@ -98,45 +98,45 @@
                 </div>
             </div>
             <!-- ====== plan item -->
-            {{--<div class="col-md-4 aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">--}}
-                {{--<div class="plan-item has-style1 in-left">--}}
+            <div class="col-md-4 aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+                <div class="plan-item has-style1 in-left">
 
-                    {{--<div class="plan-head">--}}
-                        {{--<h4 class="plan-title"> Bespoke Packages </h4>--}}
-                        {{--<div class="flex center">--}}
-                            {{--<div class="plan-price">£POA</div>--}}
-                            {{--<p class="font-weight-bold">For enterprise clients</p>--}}
+                    <div class="plan-head">
+                        <h4 class="plan-title"> Bespoke Packages </h4>
+                        <div class="flex center">
+                            <div class="plan-price">£POA</div>
+                            <p class="font-weight-bold">For enterprise clients</p>
 
-                        {{--</div>--}}
+                        </div>
 
-                    {{--</div>--}}
-                    {{--<div class="plan-body">--}}
-                        {{--<ul class="list-items">--}}
-                            {{--<li class="item">--}}
-                                {{--<img src="images/icons/check.svg" alt="">  Customisable package--}}
-                            {{--</li>--}}
-                            {{--<li class="item">--}}
-                                {{--<img src="images/icons/check.svg" alt="">  Integrated Consultancy--}}
-                            {{--</li>--}}
-                            {{--<li class="item">--}}
-                                {{--<img src="images/icons/check.svg" alt="">  Fixed Project Milestones--}}
-                            {{--</li>--}}
-                            {{--<li class="item ">--}}
-                                {{--<img src="images/icons/check.svg" alt=""> Ongoing training and support--}}
-                            {{--</li>--}}
-                            {{--<li class="item ">--}}
-                                {{--<img src="images/icons/check.svg" alt=""> Tailored to your needs--}}
-                            {{--</li>--}}
-                            {{--<br /><br /><br />--}}
+                    </div>
+                    <div class="plan-body">
+                        <ul class="list-items">
+                            <li class="item">
+                                <img src="images/icons/check.svg" alt="">  Customisable package
+                            </li>
+                            <li class="item">
+                                <img src="images/icons/check.svg" alt="">  Integrated Consultancy
+                            </li>
+                            <li class="item">
+                                <img src="images/icons/check.svg" alt="">  Fixed Project Milestones
+                            </li>
+                            <li class="item ">
+                                <img src="images/icons/check.svg" alt=""> Ongoing training and support
+                            </li>
+                            <li class="item ">
+                                <img src="images/icons/check.svg" alt=""> Tailored to your needs
+                            </li>
+                            <br /><br /><br />
 
-                        {{--</ul>--}}
-                        {{--<div class="flex center mt-1">--}}
-                            {{--<a href="" class="btn btn-dark btn-block"> Get Started </a>--}}
-                        {{--</div>--}}
+                        </ul>
+                        <div class="flex center mt-1">
+                            <a href="{{url('/checkout/test')}}" class="btn btn-dark btn-block"> Get Started </a>
+                        </div>
 
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
+                    </div>
+                </div>
+            </div>
 
 
 
