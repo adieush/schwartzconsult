@@ -27,7 +27,7 @@ Route::get('/checkout/success', 'CheckoutController@success');
 Route::get('/checkout/fail', 'CheckoutController@fail');
 Route::get('/checkout/one-to-one', 'CheckoutController@oneToOne');
 Route::get('/checkout/agency-package', 'CheckoutController@agencyPackage');
-Route::get('/checkout/test', 'CheckoutController@test');
+//Route::get('/checkout/test', 'CheckoutController@test');
 Route::post('/checkout/response-to-server', 'CheckoutController@responseToServer');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
