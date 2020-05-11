@@ -42,7 +42,8 @@ Route::group(
         ]
     ],
     function() {
-        Route::get('/', ['as' => 'admin.dashboard', 'uses' => 'AdminController@index']);
+        Route::get('/dashboard', ['as' => 'admin.dashboard', 'uses' => 'AdminController@index']);
+        Route::get('/example', ['as' => 'admin.dashboard', 'uses' => 'AdminController@example']);
         Route::get('/orders', ['as' => 'admin.orders', 'uses' => 'OrdersController@index']);
         Route::get('/orders/create', ['as' => 'admin.orders.create', 'uses' => 'OrdersController@create']);
         Route::post('/orders/store', ['as' => 'admin.orders.store', 'uses' => 'OrdersController@store']);

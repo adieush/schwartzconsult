@@ -1,1 +1,1 @@
-admin
+@extends('admin.layouts.layout')
