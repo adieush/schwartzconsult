@@ -94,6 +94,9 @@ class OrdersController extends Controller
      */
     public function destroy(Order $order)
     {
+        echo '<pre>';
+        var_dump($order);
+        exit;
         //
     }
 }

@@ -52,8 +52,19 @@
                                     <td>{{ $invoice->amount }}</td>
                                     <td>24/09/2015</td>
                                     <td>
-                                        <button class="btn btn-default btn-rounded btn-condensed btn-sm"><span class="fa fa-pencil"></span></button>
-                                        <button class="btn btn-danger btn-rounded btn-condensed btn-sm" onClick="delete_row('trow_1');"><span class="fa fa-times"></span></button>
+
+                                        <form action="{{ route('admin.invoices.destroy',$invoice->id) }}" method="POST">
+
+                                            <a href="{{ route('admin.invoices.show',$invoice->id) }}" class="btn btn-default btn-rounded btn-condensed btn-sm"><span class="fa fa-pencil"></span></a>
+
+
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-danger btn-rounded btn-condensed btn-sm"><span class="fa fa-times"></span></button>
+
+                                            {{--<button type="submit" class="btn btn-danger">Delete</button>--}}
+                                        </form>
+
                                     </td>
                                 </tr>
                             @endforeach

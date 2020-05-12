@@ -62,7 +62,9 @@ class InvoicesController extends Controller
      */
     public function show(Invoice $invoice)
     {
-        //
+        echo '<pre>';
+        var_dump($invoice);
+        exit;
     }
 
     /**

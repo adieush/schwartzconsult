@@ -53,6 +53,7 @@ Route::group(
         Route::get('/orders/edit', ['as' => 'admin.orders.edit', 'uses' => 'OrdersController@edit']);
 
         Route::get('/invoices', ['as' => 'admin.invoices', 'uses' => 'InvoicesController@index']);
+        Route::get('/invoices/show', ['as' => 'admin.orders.show', 'uses' => 'InvoicesController@show']);
         Route::get('/invoices/create', ['as' => 'admin.invoices.create', 'uses' => 'InvoicesController@create']);
         Route::post('/invoices/store', ['as' => 'admin.invoices.store', 'uses' => 'InvoicesController@store']);
         Route::delete('/invoices/destroy{id}', ['as' => 'admin.invoices.destroy', 'uses' => 'InvoicesController@destroy']);
