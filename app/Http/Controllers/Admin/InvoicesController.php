@@ -45,12 +45,13 @@ class InvoicesController extends Controller
             'client_name' => 'required',
         ]);
         $data = $request->all();
+
         $data['hash'] = Str::random(15);
 
-        Invoice::create($data);
-
+        $invoice = Invoice::create($data);
+        $url = url('/checkout/by-hash/'.$invoice->hash);
         return redirect()->route('admin.invoices')
-            ->with('success','Order created successfully.');
+            ->with('success',"Order created successfully. The link: $url");
     }
 
     /**

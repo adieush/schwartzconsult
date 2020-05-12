@@ -17,7 +17,9 @@ class CreateInvoicesTable extends Migration
             $table->id();
             $table->string('hash');
             $table->integer('amount');
-            $table->string('status')->default('waiting');
+            $table->string('currency');
+            $table->string('status')->default('new');
+            $table->boolean('is_regulated')->default(false);
             $table->string('client_name')->default('Incognito Client');
             $table->string('phone_number')->nullable();
             $table->string('email')->nullable();

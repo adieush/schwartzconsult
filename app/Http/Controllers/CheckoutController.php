@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Invoice;
 use App\Order;
 use Cloudipsp\Configuration;
 use Illuminate\Http\Request;
@@ -78,6 +79,31 @@ class CheckoutController extends Controller
         \Cloudipsp\Checkout::url($checkoutData)->toCheckout();
 
         return;
+    }
+
+    public function byHash($hash)
+    {
+        $invoice = Invoice::getByHash($hash);
+
+        if(!empty($invoice)){
+            Configuration::setMerchantId(config('fondy.merchant_id'));
+            Configuration::setSecretKey(config('fondy.secret_key'));
+            Configuration::setRequestType('form');
+            $checkoutData = [
+                'order_desc' => $invoice->client_name,
+                'currency' => $invoice->currency,
+                'amount' => $invoice->amount,
+                'response_url' => url("/checkout/response-to-server"),
+//            'server_callback_url' => 'http://site.com/callbackurl',
+//            'sender_email' => 'test@fondy.eu',
+                'lang' => 'en',
+                'product_id' => $invoice->hash,
+                'lifetime' => 36000
+            ];
+            \Cloudipsp\Checkout::url($checkoutData)->toCheckout();
+        }
+        return;
+        
     }
 
 

@@ -29,27 +29,39 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Amount:</strong>
+                    <label class="col-md-3 control-label">Amount</label>
                     <input type="text" name="amount" class="form-control" placeholder="Amount">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Currency</label>
+                        <select name="currency" class="form-control select">
+                            <option value="USD">USD</option>
+                            <option value="GBP">GBP</option>
+                        </select>
+
                 </div>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Client Name:</strong>
+                    <label class="col-md-3 control-label">Client Name</label>
                     <input type="text" name="client_name" class="form-control" placeholder="Client Name">
                 </div>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Phone Number:</strong>
+                    <label class="col-md-3 control-label">Phone Number</label>
                     <input type="text" name="phone_number" class="form-control" placeholder="Phone Number">
                 </div>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
             </div>
         </div>
 
