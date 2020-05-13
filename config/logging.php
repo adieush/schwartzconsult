@@ -35,6 +35,11 @@ return [
     */
 
     'channels' => [
+        'fondy_says' => [
+            'driver' => 'single',
+            'path' => storage_path('logs/fondy.log'),
+            'level' => 'debug',
+        ],
         'stack' => [
             'driver' => 'stack',
             'channels' => ['single'],
