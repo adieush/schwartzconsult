@@ -153,6 +153,8 @@ class CheckoutController extends Controller
             'Fondy CALLBACK!' . PHP_EOL,
             $request->post()
         );
+
+        return redirect('/checkout/success');
     }
 
     public function success(){
