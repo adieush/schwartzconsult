@@ -12,6 +12,7 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        '/checkout/response-to-server'
+        '/checkout/response-to-server',
+        '/checkout/callback-to-server'
     ];
 }

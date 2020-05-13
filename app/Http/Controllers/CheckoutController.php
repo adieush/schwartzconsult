@@ -147,14 +147,19 @@ class CheckoutController extends Controller
 
     }
 
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
     public function callbackToServer(Request $request)
     {
         Log::channel('fondy_says')->info(
             'Fondy CALLBACK!' . PHP_EOL,
             $request->post()
         );
-
-        return redirect('/checkout/success');
+        
     }
 
     public function success(){
