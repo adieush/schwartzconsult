@@ -168,7 +168,7 @@ class CheckoutController extends Controller
         /** @var Invoice $invoice */
         $invoice = Invoice::getByHash($request->post('product_id'));
         if(!empty($invoice)){
-            $invoice->response_status = $request->post('order_status');
+            $invoice->order_status = $request->post('order_status');
             $invoice->save();
         }
     }
