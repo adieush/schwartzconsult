@@ -65,7 +65,7 @@
 
                                         <form action="{{ route('admin.invoices.destroy',$invoice->id) }}" method="POST">
 
-                                            <a href="{{ route('admin.invoices.show',$invoice->id) }}" class="btn btn-default btn-rounded btn-condensed btn-sm"><span class="fa fa-pencil"></span></a>
+                                            <a href="{{ route('admin.invoices.show',$invoice->id) }}" class="btn btn-default btn-rounded btn-condensed btn-sm"><span class="fa fa-eye"></span></a>
 
 
                                             @csrf

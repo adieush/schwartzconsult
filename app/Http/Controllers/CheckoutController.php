@@ -110,7 +110,10 @@ class CheckoutController extends Controller
 
     public function test()
     {
-        Log::channel('fondy_says')->info('hello from fondy!', ['fff'=>234]);
+        Log::channel('slack')->info('hello from laravel blog!', ['some'=>'thing']);
+        echo '<pre>';
+        var_dump(env('LOG_SLACK_WEBHOOK_URL'));
+        exit;
 
     }
 
@@ -172,6 +175,12 @@ class CheckoutController extends Controller
             $invoice->order_status = $request->post('order_status');
             $invoice->payment_id = $request->post('payment_id');
             $invoice->save();
+            Log::channel('slack')->info('Callback from Fondy',
+                [
+                    'client_name'=>$invoice->client_name,
+                    'amount' => $invoice->getAmount(),
+                    'status' => $request->post('order_status')
+                ]);
         }
     }
 
