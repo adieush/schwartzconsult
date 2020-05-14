@@ -163,12 +163,14 @@ class CheckoutController extends Controller
         $request->validate([
             'product_id' => 'required',
             'order_status' => 'required',
+            'payment_id' => 'required',
         ]);
 
         /** @var Invoice $invoice */
         $invoice = Invoice::getByHash($request->post('product_id'));
         if(!empty($invoice)){
             $invoice->order_status = $request->post('order_status');
+            $invoice->payment_id = $request->post('payment_id');
             $invoice->save();
         }
     }
