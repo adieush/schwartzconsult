@@ -174,6 +174,7 @@ class CheckoutController extends Controller
         if(!empty($invoice)){
             $invoice->order_status = $request->post('order_status');
             $invoice->payment_id = $request->post('payment_id');
+            $invoice->card_type = $request->post('card_type');
             $invoice->save();
             Log::channel('slack')->info('Callback from Fondy',
                 [

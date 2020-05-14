@@ -40,7 +40,7 @@
                                 <th width="100">status</th>
                                 <th width="100">currency</th>
                                 <th width="100">amount</th>
-                                <th width="100">date</th>
+                                <th width="100">updated at</th>
                                 <th width="120">actions</th>
                             </tr>
                             </thead>
@@ -60,7 +60,7 @@
                                     </td>
                                     <td>{{ $invoice->currency }}</td>
                                     <td>{{ $invoice->getAmount() }}</td>
-                                    <td>24/09/2015</td>
+                                    <td>{{ $invoice->updated_at }}</td>
                                     <td>
 
                                         <form action="{{ route('admin.invoices.destroy',$invoice->id) }}" method="POST">
