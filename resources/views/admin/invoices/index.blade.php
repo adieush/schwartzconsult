@@ -51,10 +51,10 @@
                                     <td>
                                         @if ($invoice->order_status == 'processing')
                                             <span class="label label-warning">Processing</span>
-                                        {{--@elseif ($invoice->order_status == 'processing')--}}
-                                            {{--<span class="label label-default">Processing</span>--}}
+                                        @elseif ($invoice->order_status == 'approved')
+                                            <span class="label label-success">Approved</span>
                                         @else
-                                            <span class="label label-info">Info</span>
+                                            <span class="label label-info">Created</span>
                                         @endif
                                     </td>
                                     <td>{{ $invoice->amount }}</td>
