@@ -48,7 +48,15 @@
                                 <tr id="trow_1">
                                     <td class="text-center">{{ ++$i }}</td>
                                     <td><strong>{{ $invoice->client_name }}</strong></td>
-                                    <td><span class="label label-success">New</span></td>
+                                    <td>
+                                        @if ($invoice->order_status == 'processing')
+                                            <span class="label label-warning">Processing</span>
+                                        {{--@elseif ($invoice->order_status == 'processing')--}}
+                                            {{--<span class="label label-default">Processing</span>--}}
+                                        @else
+                                            <span class="label label-info">Info</span>
+                                        @endif
+                                    </td>
                                     <td>{{ $invoice->amount }}</td>
                                     <td>24/09/2015</td>
                                     <td>
@@ -68,39 +76,6 @@
                                     </td>
                                 </tr>
                             @endforeach
-                            <tr id="trow_1">
-                                <td class="text-center">1</td>
-                                <td><strong>John Doe</strong></td>
-                                <td><span class="label label-default">New</span></td>
-                                <td>$430.20</td>
-                                <td>24/09/2015</td>
-                                <td>
-                                    <button class="btn btn-default btn-rounded btn-condensed btn-sm"><span class="fa fa-pencil"></span></button>
-                                    <button class="btn btn-danger btn-rounded btn-condensed btn-sm" onClick="delete_row('trow_1');"><span class="fa fa-times"></span></button>
-                                </td>
-                            </tr>
-                            <tr id="trow_2">
-                                <td class="text-center">2</td>
-                                <td><strong>Dmitry Ivaniuk</strong></td>
-                                <td><span class="label label-warning">Pending</span></td>
-                                <td>$1,351.00</td>
-                                <td>23/09/2015</td>
-                                <td>
-                                    <button class="btn btn-default btn-rounded btn-condensed btn-sm"><span class="fa fa-pencil"></span></button>
-                                    <button class="btn btn-danger btn-rounded btn-condensed btn-sm" onClick="delete_row('trow_2');"><span class="fa fa-times"></span></button>
-                                </td>
-                            </tr>
-                            <tr id="trow_3">
-                                <td class="text-center">3</td>
-                                <td><strong>Nadia Ali</strong></td>
-                                <td><span class="label label-info">In Queue</span></td>
-                                <td>$2,621.00</td>
-                                <td>22/09/2015</td>
-                                <td>
-                                    <button class="btn btn-default btn-rounded btn-condensed btn-sm"><span class="fa fa-pencil"></span></button>
-                                    <button class="btn btn-danger btn-rounded btn-condensed btn-sm" onClick="delete_row('trow_3');"><span class="fa fa-times"></span></button>
-                                </td>
-                            </tr>
                             </tbody>
                         </table>
                     </div>
