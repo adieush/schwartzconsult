@@ -38,6 +38,7 @@
                                 <th width="50">id</th>
                                 <th>name</th>
                                 <th width="100">status</th>
+                                <th width="100">currency</th>
                                 <th width="100">amount</th>
                                 <th width="100">date</th>
                                 <th width="120">actions</th>
@@ -57,7 +58,8 @@
                                             <span class="label label-info">Created</span>
                                         @endif
                                     </td>
-                                    <td>{{ $invoice->amount }}</td>
+                                    <td>{{ $invoice->currency }}</td>
+                                    <td>{{ $invoice->getAmount() }}</td>
                                     <td>24/09/2015</td>
                                     <td>
 
