@@ -6,7 +6,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Invoice extends Model
 {
-    protected $fillable = ['client_name', 'phone_number', 'amount', 'currency', 'hash'];
+    protected $fillable = [
+        'client_name',
+        'phone_number',
+        'amount',
+        'currency',
+        'hash',
+        'order_status',
+        'payment_id',
+        'card_type'
+    ];
 
 
     public static function getByHash($hash)

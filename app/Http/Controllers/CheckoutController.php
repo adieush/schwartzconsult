@@ -151,7 +151,7 @@ class CheckoutController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return void
      */
     public function callbackToServer(Request $request)
     {
@@ -159,7 +159,18 @@ class CheckoutController extends Controller
             'Fondy CALLBACK!' . PHP_EOL,
             $request->post()
         );
-        
+
+        $request->validate([
+            'product_id' => 'required',
+            'response_status' => 'required',
+        ]);
+
+        /** @var Invoice $invoice */
+        $invoice = Invoice::getByHash($request->post('product_id'));
+        if(!empty($invoice)){
+            $invoice->response_status = $request->post('response_status');
+            $invoice->save();
+        }
     }
 
     public function success(){
