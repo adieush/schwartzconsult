@@ -86,7 +86,7 @@ class CheckoutController extends Controller
     {
         $invoice = Invoice::getByHash($hash);
 
-        if(!empty($invoice)){
+        if(!empty($invoice) && $invoice->order_status != 'approved'){
             Configuration::setMerchantId(config('fondy.merchant_id'));
             Configuration::setSecretKey(config('fondy.secret_key'));
             Configuration::setRequestType('form');
@@ -103,8 +103,8 @@ class CheckoutController extends Controller
             ];
             \Cloudipsp\Checkout::url($checkoutData)->toCheckout();
         }
-        return;
-        
+
+        return redirect('/');
     }
 
 
