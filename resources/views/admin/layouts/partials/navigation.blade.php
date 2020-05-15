@@ -23,7 +23,10 @@
     </li>
     <li class="xn-title">Navigation</li>
     <li>
-        <a href="{{url('admin/invoices')}}"><span class="fa fa-map-marker"></span> <span class="xn-text">invoices</span></a>
+        <a href="{{url('admin/invoices')}}"><span class="fa fa-money"></span> <span class="xn-text">invoices</span></a>
+    </li>
+    <li>
+        <a href="{{url('admin/users')}}"><span class="fa fa-user"></span> <span class="xn-text">Users</span></a>
     </li>
     <li class="xn-openable">
         <a href="#"><span class="fa fa-dashboard"></span> <span class="xn-text">Dashboards</span></a>

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -54,10 +55,16 @@ Route::group(
         Route::get('/orders/edit', ['as' => 'admin.orders.edit', 'uses' => 'OrdersController@edit']);
 
         Route::get('/invoices', ['as' => 'admin.invoices', 'uses' => 'InvoicesController@index']);
-        Route::get('/invoices/show', ['as' => 'admin.orders.show', 'uses' => 'InvoicesController@show']);
         Route::get('/invoices/create', ['as' => 'admin.invoices.create', 'uses' => 'InvoicesController@create']);
         Route::post('/invoices/store', ['as' => 'admin.invoices.store', 'uses' => 'InvoicesController@store']);
         Route::delete('/invoices/destroy{id}', ['as' => 'admin.invoices.destroy', 'uses' => 'InvoicesController@destroy']);
         Route::get('/invoices/show', ['as' => 'admin.invoices.show', 'uses' => 'InvoicesController@show']);
         Route::get('/invoices/edit', ['as' => 'admin.invoices.edit', 'uses' => 'InvoicesController@edit']);
-});
+        Route::get('/users', ['as' => 'admin.users', 'uses' => 'UsersController@index']);
+        Route::get('/users/create', ['as' => 'admin.users.create', 'uses' => 'UsersController@create']);
+        Route::post('/users/store', ['as' => 'admin.users.store', 'uses' => 'UsersController@store']);
+        Route::delete('/users/destroy{id}', ['as' => 'admin.users.destroy', 'uses' => 'UsersController@destroy']);
+        Route::get('/users/show', ['as' => 'admin.users.show', 'uses' => 'UsersController@show']);
+        Route::get('/users/edit', ['as' => 'admin.users.edit', 'uses' => 'UsersController@edit']);
+
+    });
