@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Auth;
 */
 
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::get('/', 'WelcomeController@index');
 Route::get('/packages', 'PackagesController@index');
