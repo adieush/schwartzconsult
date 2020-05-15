@@ -42,7 +42,7 @@
 
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <label class="col-md-3 control-label">Client Name</label>
+                    <label class="col-md-3 control-label">Password</label>
                     <input type="password" name="password" class="form-control" autocomplete="new-password">
                 </div>
             </div>
